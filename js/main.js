@@ -10,12 +10,12 @@ if (form) {
     const msg = document.getElementById("formMsg");
 
     if (!name || !email || !message) {
-      msg.textContent = "Lütfen tüm alanları doldur.";
+      msg.textContent = "Lutfen tum alanları doldur.";
       msg.style.color = "red";
       return;
     }
 
-    msg.textContent = "Mesaj gönderildi ✅";
+    msg.textContent = "Mesaj gonderildi ✅";
     msg.style.color = "green";
     form.reset();
   });
