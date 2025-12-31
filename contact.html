@@ -1,24 +1,46 @@
-<h1>iletisim</h1>
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İletişim</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-<form id="contactForm">
-  <label>
-    Ad Soyad
-    <input type="text" id="name" placeholder="Adınız soyadınız">
-  </label>
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="about.html">Hakkımda</a>
+    <a href="contact.html">İletişim</a>
+  </nav>
 
-  <label>
-    E-posta
-    <input type="email" id="email" placeholder="ornek@mail.com">
-  </label>
+  <main class="container">
+    <h1>İletişim</h1>
+    <p>Benimle iletişime geçmek için formu kullanabilirsin.</p>
 
-  <label>
-    Mesaj
-    <textarea id="message" rows="5" placeholder="Mesajınızı yazın"></textarea>
-  </label>
+    <section class="card">
+      <h2>Mesaj Formu</h2>
 
-  <button type="submit">Gönder</button>
+      <form id="contactForm">
+        <label>Ad Soyad</label>
+        <input type="text" id="name" placeholder="Ad Soyad" />
 
-  <p id="formMsg"></p>
-</form>
+        <label>E-posta</label>
+        <input type="email" id="email" placeholder="ornek@mail.com" />
 
-<script src="js/main.js"></script>
+        <label>Mesaj</label>
+        <textarea id="message" rows="4" placeholder="Mesajın..."></textarea>
+
+        <button type="submit">Gönder</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bora</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

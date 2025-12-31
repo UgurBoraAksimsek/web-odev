@@ -1,29 +1,22 @@
-const form = document.querySelector("#contactForm");
+const form = document.getElementById("contactForm");
 
 if (form) {
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.querySelector("#name").value.trim();
-    const email = document.querySelector("#email").value.trim();
-    const message = document.querySelector("#message").value.trim();
-    const msg = document.querySelector("#formMsg");
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const msg = document.getElementById("formMsg");
 
     if (!name || !email || !message) {
-      msg.textContent = "Lütfen tüm alanları doldurun.";
+      msg.textContent = "Lütfen tüm alanları doldur.";
       msg.style.color = "red";
       return;
     }
 
-    if (!email.includes("@") || !email.includes(".")) {
-      msg.textContent = "Lütfen geçerli bir e-posta girin.";
-      msg.style.color = "red";
-      return;
-    }
-
-    msg.textContent = "Mesajınız alındı ✅ (Demo)";
+    msg.textContent = "Mesaj gönderildi ✅";
     msg.style.color = "green";
-
     form.reset();
   });
 }
